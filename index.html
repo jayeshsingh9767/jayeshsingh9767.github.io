@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="Styles/style.css" />
+
+<body onload="typeWriter()">
+  <header>
+    <ul>
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Blog</li></a>
+      <a href="#"><li>Follow Me</li></a>
+      <a href="#"><li>Contact Me</li></a>
+    </ul>
+  </header>
+  <div class="greeting">
+    <div class="profilePic">
+      <img src="profile.jpg" alt="Profile Pic" id="profilrImg">
+    </div>
+    <p id="TextEffect"> </p>
+    <p class="greetText">Hii There... This is Jayesh. <br>I am a Computer Science Graduate, <br>I Generally Code for Web Application and Games.<br> I am also Intrested in Mobile App Development and Cloud Computing.</p>
+  </div>
+  <div class="githubBanner">
+    <h1 class="githubText">Lets Work Together On Github</h1>
+    <div class="img"><a href="#"><img src="github.jpg" alt="Github" id="github"></a></div>
+  </div>
+  <div class="Socialpanel">
+      <h1 align="center">Get me On Social Platforms</h1>
+    <div class="socialRow">
+      <div class="img"><a href="#"><img class="imgContent" id="linkden" src="linkden.png" alt="Linkden Profile"></a></div>
+      <div class="img"><a href="#"><img class="imgContent" id="facebook" src="facebook.png" alt="Facebook Profile"></a></div>
+      <div class="img"><a href="#"><img class="imgContent" id="twitter" src="twitter.png" alt="Twitter Profile"></a></div>
+      <div class="img"><a href="#"><img class="imgContent" id="instagram" src="instagram.jpg" alt="Instagram Profile"></a></div>
+    </div>
+    <div class="fb">
+      <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjayessingh9767%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> -->
+
+    </div>
+
+
+
+  </div>
+  <script>
+    var i = 0;
+    var txt = 'Lets Start Writing Some Code!';
+    var speed = 100;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("TextEffect").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+}
+</script>
+</body>
+</html>

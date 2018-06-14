@@ -1,0 +1,213 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: serif;
+
+}
+
+header{
+  background-color: #000;
+}
+
+ul{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: flex-end;
+}
+
+li{
+  width: 150px;
+  //flex-grow: 1 ;
+  text-align: center;
+  color: #fff;
+  margin: 5px;
+  padding: 8px;
+  list-style-type: none;
+  font-size: 24px;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+li:hover{
+  background-color: #fff;
+  border-radius: 30px;
+  color: #000;
+  box-shadow: 2px 2px 5px #707670;
+  transition-duration: 0.7s;
+  transition-timing-function:ease-in-out;
+}
+
+.greeting{
+  height: 420px;
+  background-color: #FCFC8D;
+  padding-top: 20px;
+
+}
+
+
+.profilePic{
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: auto; */
+  margin-top: 10px;
+  height: 400px;
+  width: 400px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: #000;
+  border-radius: 50%;
+  box-shadow: 5px 5px 35px #707670;
+}
+
+#profilrImg{
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+#TextEffect{
+  font-size: 45px;
+  color: #BE0FB1;
+  position: absolute;
+  top: 40px;
+  left: 650px;
+}
+
+#TextEffect::after{
+  content: ' |';
+  position: relative;
+  bottom: 5px;
+  font-weight: bold;
+  color: blue;
+  animation-name: cursorAnim;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+
+
+.greetText{
+  /* margin-left: 250px; */
+
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  /* text-shadow: 0px px 2px #707670; */
+  position: absolute;
+  top:250px;
+}
+
+.img{
+  flex-grow: 1;
+  width: 250px;
+  height: 250px;
+  /* border-style: solid; */
+}
+
+.githubBanner{
+  height: 420px;
+  background-color: #353839;
+}
+
+.imgContent{
+  width: 250px;
+  height: 250px;
+}
+
+.githubText{
+  display: inline-block;
+  margin-top: 180px;
+  margin-left: 30px;
+  font-size: 50px;
+  color: #fff;
+}
+
+#github{
+  margin-top: 8px;
+  float: left;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0px 2px 15px #fff;
+}
+
+body > div.githubBanner > div{
+  float: right;
+  margin-right: 200px;
+}
+
+
+.Socialpanel{
+  padding-top: 40px;
+  height: 1500px;
+  width: auto;
+  background-color: #ECF0F1 ;
+
+}
+
+
+.socialRow{
+  height: 500px;
+  display: flex;
+
+}
+
+
+#twitter{
+  height: 205px;
+  width: 220px;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 50px #707670;
+}
+
+#instagram{
+  height: 205px;
+  width: 220px;
+  margin-top: 15px;
+  border-radius: 40px;
+  margin-left: 15px;
+  box-shadow: 0px 20px 50px #707670;
+
+}
+
+.img:hover{
+  animation-name: vibrate;
+  animation-duration: 0.15s;
+  animation-iteration-count: 2;
+  animation-fill-mode: both;
+  /* animation-timing-function: ease-in-out; */
+}
+
+
+
+/*All the Animations in the Page are Listed Below  */
+@keyframes vibrate {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100%{
+      transform: translateX(10px);
+    }
+}
+
+
+@keyframes cursorAnim {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+
+  }
+}
