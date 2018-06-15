@@ -52,10 +52,10 @@ li:hover{
 .profilePic{
   display: inline-block;
   margin-left: 30px;
-  margin-right: auto; */
+  margin-right: auto;
   margin-top: 10px;
-  height: 400px;
-  width: 400px;
+  height: 29vw;
+  width: 29vw;
   border-width: 2px;
   border-style: inset;
   border-color: #000;
@@ -65,17 +65,20 @@ li:hover{
 
 #profilrImg{
   display: inline-block;
-  height: 400px;
-  width: 400px;
+  height: 29vw;
+  width: 29vw;
   border-radius: 50%;
 }
 
 #TextEffect{
-  font-size: 45px;
+  display: inline;
+  font-size: 3.8vw;
   color: #BE0FB1;
   position: absolute;
   top: 40px;
-  left: 650px;
+  margin-left: 5.5vw;
+  /* left: 550px; */
+  /* right: 100px; */
 }
 
 #TextEffect::after{
@@ -96,7 +99,7 @@ li:hover{
   /* margin-left: 250px; */
 
   display: inline-block;
-  font-size: 30px;
+  font-size: 2.5vw;
   font-weight: 100;
   text-align: center;
   /* text-shadow: 0px px 2px #707670; */
@@ -125,7 +128,7 @@ li:hover{
   display: inline-block;
   margin-top: 180px;
   margin-left: 30px;
-  font-size: 50px;
+  font-size: 4vw;
   color: #fff;
 }
 
@@ -165,7 +168,7 @@ body > div.githubBanner > div{
   margin-top: 15px;
   margin-left: 10px;
   border-radius: 20px;
-  box-shadow: 0px 20px 50px #707670;
+  box-shadow: 0vw 1.5vw 5vw #707670;
 }
 
 #instagram{
@@ -174,7 +177,7 @@ body > div.githubBanner > div{
   margin-top: 15px;
   border-radius: 40px;
   margin-left: 15px;
-  box-shadow: 0px 20px 50px #707670;
+  box-shadow: 0vw 1.5vw 5vw #707670;
 
 }
 
@@ -210,4 +213,85 @@ body > div.githubBanner > div{
     opacity: 0;
 
   }
+}
+
+
+/* Handeling Design for Smaller Screens Like Mobile and smartphone */
+@media only screen and (max-width: 550px) {
+  /* body{
+    width: 100vh;
+  } */
+
+  .greeting{
+    height: 140vw;
+  }
+  .profilePic{
+    margin-left: 12vw;
+    margin-top: 6vw;
+    width: 70vw;
+    height: 70vw;
+  }
+  #profilrImg{
+    width: 70vw;
+    height: 70vw;
+  }
+  #TextEffect{
+    display: block;
+    font-size: 6.5vw;
+  }
+  .greetText{
+    display: block;
+    position: static;
+    font-size: 6.5vw;
+  }
+  .githubBanner{
+    height: 130vw;
+  }
+  .githubText{
+    display: block;
+    margin:0px;
+    padding: 10vw 0vw 0vw 0vw;
+    text-align: center;
+    font-size: 6vw;
+
+  }
+
+
+  body > div.githubBanner > div{
+    display: block;
+    background-color: rgba(0,0,0,0);
+    width: 70vw;
+    height: 70vw;
+    margin-left: auto;
+    margin-right:18vw;
+    margin-top: 8vw;
+    float: none;
+  }
+  #github{
+    width: 70vw;
+    height: 70vw;
+  }
+  .socialRow{
+    display: flex;
+    width: 94vw;
+    height: 50px;
+    border-style: ridge;
+  }
+
+  .img{
+    width: 15vw;
+    height: 15vw;
+  }
+  #linkden, #facebook, #instagram, #twitter{
+    width: 15vw;
+    height: 15vw;
+  }
+  #instagram{
+    padding-left: 15px; 
+    margin: 0px;
+  }
+  #twitter{
+    margin: 0px;
+  }
+
 }
