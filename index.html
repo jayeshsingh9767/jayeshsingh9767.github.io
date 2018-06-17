@@ -9,11 +9,24 @@
 
 <body onload="typeWriter()">
   <header>
-    <ul>
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li>Blog</li></a>
-      <a href="#"><li>Follow Me</li></a>
-      <a href="#"><li>Contact Me</li></a>
+    <ul class="mainMenu">
+      <li class="menuItem" id="home"><a href="#">Home</a></li>
+      <li class="menuItem" id="blog"><a href="#">Blog</a></li>
+      <li class="menuItem" id="self"><a href="#">My Self <div id="downArrow">&#9660;</div></a>
+      <ul class="subMenu">
+          <a href=""></a>
+          <a href="#" class="inner">
+            <li>Gallary</li>
+          </a>
+          <a href="#" class="inner">
+            <li>Field Of Intrest</li>
+          </a>
+          <a href="#" class="inner">
+            <li>Projects</li>
+        </ul>
+
+      </li></a>
+      <li class="menuItem" id="ContactMe"><a href="#">Contact Me</a></li>
     </ul>
   </header>
   <div class="greeting">
@@ -27,6 +40,25 @@
     <h1 class="githubText">Lets Work Together On Github</h1>
     <div class="img"><a href="#"><img src="github.jpg" alt="Github" id="github"></a></div>
   </div>
+
+  <h1 class="helpText">How May I Help You !??</h1>
+  <div class="helpRow">
+
+    <div class="helpBanner" id="website">
+      <img id="websiteImage" src="html.png" alt="">
+      <p class="info"></p>
+    </div>
+    <div class="helpBanner" id="game">
+      <img id="gameImage" src="game.png" alt="">
+      <p class="info"></p>
+    </div>
+    <div class="helpBanner" id="android">
+      <img id="androidImage" src="android.png" alt="">
+      <p class="info"></p>
+    </div>
+  </div>
+
+
   <div class="Socialpanel">
       <h1 align="center">Get me On Social Platforms</h1>
     <div class="socialRow">
