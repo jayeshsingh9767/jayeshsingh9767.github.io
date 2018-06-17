@@ -7,6 +7,7 @@ body{
 
   header{
     background-color: #000;
+    height: 55px;
   }
 
   .mainMenu{
@@ -210,7 +211,7 @@ body > div.githubBanner > div{
   display: flex;
   /* background-color: #36EBFA; */
   background: linear-gradient(#36EBFA,#004DFF);
-  height: 35vw;
+  height: 40vw;
 }
 
 .helpText{
@@ -225,11 +226,26 @@ body > div.githubBanner > div{
   flex-grow: 1;
   margin-top: 3vw;
   border-radius: 20px;
-  margin-left: 4vw;
-  margin-right: 4vw;
-  height: 29vw;
+  margin-left: 2.4vw;
+  margin-right: 2.4vw;
+  height: 34vw;
   border-style: solid;
 
+}
+
+.info{
+  /* justify-content:space-between; */
+  text-align: center;
+  font-family:cursive;
+
+  color: #fff;
+  font-size: 1.3vw;
+}
+
+h2{
+  font-size: 1.5vw;
+  color: #E80303;
+  font-family: Georgia;
 }
 
 #websiteImage, #gameImage, #androidImage{
@@ -245,7 +261,7 @@ body > div.githubBanner > div{
 
 .Socialpanel{
   padding-top: 40px;
-  height: 1500px;
+  height: 350px;
   width: auto;
   background-color: #ECF0F1 ;
 
@@ -253,9 +269,8 @@ body > div.githubBanner > div{
 
 
 .socialRow{
-  height: 500px;
+  height: 250px;
   display: flex;
-
 }
 
 
@@ -287,6 +302,25 @@ body > div.githubBanner > div{
 }
 
 
+footer{
+  height: 100px;
+  background-color: #000;
+}
+
+.footerText{
+  color: #fff;
+  font-size: 1.25vw
+}
+
+#copyright{
+  position: relative;
+  left: 10vw;
+}
+
+#creater{
+  position: absolute;
+  right: 26vw;
+}
 
 /*All the Animations in the Page are Listed Below  */
 @keyframes vibrate {
@@ -329,6 +363,29 @@ body > div.githubBanner > div{
   /* body{
     width: 100vh;
   } */
+
+  header{
+    height:50px;
+    z-index: 3;
+  }
+
+  header::after{
+    content: url(menuicon.png);
+    float: right;
+    padding: 0px 10px;
+    margin-top: 4px;
+  }
+
+  .mainMenu{
+    flex-direction:column;
+  }
+  .menuItem{
+    display: none;
+  }
+
+  header: .menuItem{
+    display: block;
+  }
 
   .greeting{
     height: 80vh;
