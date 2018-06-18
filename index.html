@@ -9,7 +9,10 @@
 
 <body onload="typeWriter()">
   <header>
-    <ul class="mainMenu">
+
+    <button type="button" name="menuButton" id="menuButton" onclick="hideShow()"><img src="menuicon.png" alt="Menu " id="menuIcon"></button>
+
+    <ul class="mainMenu" id="menu">
       <li class="menuItem" id="home"><a href="#">Home</a></li>
       <li class="menuItem" id="blog"><a href="#">Blog</a></li>
       <li class="menuItem" id="self"><a href="#">My Self <div id="downArrow">&#9660;</div></a>
@@ -97,7 +100,19 @@
         i++;
         setTimeout(typeWriter, speed);
       }
-}
+    }
+    // function ShowMenu(){
+    //   document.getElementById('menu').style.display="";
+    // }
+
+    function hideShow(){
+        var x = document.getElementById("menu");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+    }
 </script>
 </body>
 </html>
