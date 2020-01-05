@@ -278,7 +278,7 @@ html.swipebox-html.swipebox-touch {
     max-width: 800px;
   }
 }
-/* Skin 
+/* Skin
 --------------------------*/
 #swipebox-overlay {
   background: #0d0d0d;
@@ -297,7 +297,7 @@ html.swipebox-html.swipebox-touch {
 }
 @media(max-width:1366px){
 #swipebox-top-bar {
-    bottom: 20%;
+    bottom: 16%;
 }
 }
 @media(max-width:1080px){
