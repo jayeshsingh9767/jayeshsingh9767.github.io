@@ -748,6 +748,12 @@ input[type="submit"]:hover{
 .footer-agileinfo p a:hover{
 	text-decoration:underline;
 }
+
+.txt-rotate, .heding {
+	font-family: 'Raleway', sans-serif;
+	display: inline;
+
+}
 /*-- //footer--*/
 
 /*-- responsive--*/
