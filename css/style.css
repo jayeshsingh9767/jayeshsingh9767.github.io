@@ -2544,6 +2544,11 @@ ul {
   margin: 0 auto;
 }
 
+.txt-rotate, .heding {
+	font-family: 'Raleway', sans-serif;
+	display: inline;
+}
+
 @media (max-width: 576px) {
   /* line 53, /Applications/MAMP/htdocs/palash/cl/july 2019/191 Lifeleck Blog/191 Lifeleck Blog html/sass/_banner.scss */
   .banner_post .banner_post_1 {
